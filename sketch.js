@@ -50,7 +50,6 @@ function setup() {
 
 function draw() {
   background("skyBlue");
-  monkey.debug=false;
   
   if(gameState==="play"){
 
@@ -140,7 +139,7 @@ function spawnObstacles(){
     obstacle=createSprite(400,326,20,40);
     obstacle.addImage(obstacleImage);
     obstacle.velocityX=-4;
-    obstacle.scale=0.1;
+    obstacle.scale=0.08;
     obstacle.lifetime=100;
     obstacleGroup.add(obstacle);
   }
