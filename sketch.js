@@ -50,7 +50,7 @@ function setup() {
 
 function draw() {
   background("skyBlue");
-  monkey.debug=true;
+  monkey.debug=false;
   
   if(gameState==="play"){
 
