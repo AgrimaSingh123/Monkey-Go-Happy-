@@ -53,20 +53,16 @@ function draw() {
   
   if(gameState==="play"){
 
+  //enable the player to jump the monkey    
   if(keyDown("space")&&monkey.y>=300){
     monkey.velocityY=-15;
   };
 
     gameOver.visible=false;
     restart.visible=false;
-console.log(monkey.y);
-    //enable the player to jump the monkey
-
-  
+ 
   //survival time
-
-  
-  survivalTime=Math.ceil(frameCount/frameRate());
+survivalTime=Math.ceil(frameCount/frameRate());
 
   
   if(monkey.isTouching(foodGroup)){
